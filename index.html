@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tactoe. Simplify Your Workflow
+  </title>
+  <link rel="icon" href="/src/images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1f2937;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sidebarExpanded = localStorage.getItem('sidebar-expanded') === 'true';
+      document.body.classList.toggle('sidebar-expanded', sidebarExpanded);
+    });
+  </script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
