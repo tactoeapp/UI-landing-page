@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Clock, Users, BarChart2, Layers, MessageCircle, Grid, Layout } from 'lucide-react';
+import { CheckCircle, Clock, Users, BarChart2, Layers, MessageCircle, Grid, Layout, Code } from 'lucide-react';
 
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -57,7 +57,7 @@ const FeaturesBlocks = () => {
       icon: CheckCircle,
       title: "Alerts & Notifications",
       description: "Stay informed with timely alerts and notifications for bugs and tasks. Get updates on deliverables via email and in-app notifications. No more surprises!"
-    }
+    },
   ];
 
   return (
@@ -72,7 +72,7 @@ const FeaturesBlocks = () => {
             The best part? It's affordable as heck. We’re working hard to finish our first MVP by January. Sign up for early access now, because it's going to be a closed-access release!
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}

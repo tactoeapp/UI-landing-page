@@ -22,7 +22,7 @@ const HeroHome = () => {
     setSubmitMessage('');
 
     try {
-      const response = await fetch('http://localhost:3000/subscribe', {
+      const response = await fetch('https://tactoemailcampaign.onrender.com/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),

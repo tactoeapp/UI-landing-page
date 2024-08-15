@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle, Layers, PieChart, Bell, BarChart2, FileText, DollarSign } from 'lucide-react';
+import { CheckCircle, Layers, PieChart, Bell, BarChart2, FileText, DollarSign, Code } from 'lucide-react';
 
 function Features() {
   const [activeTab, setActiveTab] = useState(0);
@@ -36,7 +36,8 @@ function Features() {
       icon: FileText,
       title: "Automated Reports",
       description: "Generate detailed project reports with a single click. Provide clients and stakeholders with clear overviews of project status and performance."
-    }
+    },
+
   ];
 
   useEffect(() => {

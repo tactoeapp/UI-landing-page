@@ -122,7 +122,7 @@ function Footer() {
           {/* Footer bottom text */}
           <div className="text-sm text-gray-500 text-center">
             <p>&copy; {new Date().getFullYear()} tactoe. All rights reserved.</p>
-            <p className="mt-2">Our landing page is open source! Check it out on <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>. Contributions and PRs are welcome!</p>
+            <p className="mt-2">Our landing page is open source! Check it out on <a href="https://github.com/tactoeapp/UI-landing-page" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub</a>. Contributions and PRs are welcome!</p>
           </div>
         </div>
       </div>
